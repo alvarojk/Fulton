@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Mini-Tube</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mi Mini-Tube</h1>
+        <input type="text" placeholder="Buscar...">
+    </header>
+
+    <main>
+        <section id="video-player">
+            <h2>Reproduciendo Ahora</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="video-list">
+            <h2>Videos Sugeridos</h2>
+            <div class="video-item">
+                <a href="#" data-video-url="https://www.youtube.com/embed/lk6_bDmWz7w">
+                    <img src="http://via.placeholder.com/160x90/0000FF/FFFFFF?Text=Video+1" alt="Miniatura Video 1">
+                    <h3>Título del Video 1</h3>
+                    <p>Descripción breve del video 1.</p>
+                </a>
+            </div>
+            <div class="video-item">
+                <a href="#" data-video-url="https://www.youtube.com/embed/xvFZjo5PgG0">
+                    <img src="http://via.placeholder.com/160x90/FF0000/FFFFFF?Text=Video+2" alt="Miniatura Video 2">
+                    <h3>Título del Video 2</h3>
+                    <p>Descripción breve del video 2.</p>
+                </a>
+            </div>
+            </section>
+
+        <section id="upload-section">
+            <h2>Publicar un Video</h2>
+            <form id="upload-form">
+                <label for="video-title">Título del Video:</label>
+                <input type="text" id="video-title" name="video-title"><br><br>
+
+                <label for="video-url">URL del Video de YouTube:</label>
+                <input type="url" id="video-url" name="video-url" placeholder="Ej: https://www.youtube.com/embed/...">
+                <p>Por favor, introduce la URL de inserción (embed) de tu video de YouTube.</p><br><br>
+
+                <button type="button" id="publish-button">Publicar</button>
+            </form>
+            <div id="upload-message" style="display:none;">¡Video "publicado" exitosamente! (Simulación)</div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mi Mini-Tube - Hecho en Cúcuta</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
